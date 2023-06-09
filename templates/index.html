@@ -1,4 +1,10 @@
+<!DOCTYPE html>
 <html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+
     <body>
         <form action='/predict' method="POST">
             Favorite Bahan: <input type="text" name='favorite_bahan'><br>
@@ -10,19 +16,8 @@
             Fave Drink: <input type="text" name='fave_drink'><br>
             Menu ordered: <input type="text" name='menu_ordered'><br>
             Prediction : {{result}} <br>
-            <input type='submit' value='predict'>
+            <input type='submit' value='Predict'>
         </form>
-
-
-
-
-
-
-
-
-
-
-
-
     </body>
+
 </html>
